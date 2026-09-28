@@ -1,0 +1,42 @@
+{
+  "name": "cours-javascript-typescript-slidev",
+  "version": "1.0.0",
+  "description": "présentation slidev sur javascript et typescript",
+  "scripts": {
+    "dev": "slidev slides.md",
+    "build": "slidev build slides.md",
+    "export": "slidev export slides.md",
+    "test": "jest --runInBand",
+    "test:client": "vitest run tp-final/client --passWithNoTests",
+    "test:slides": "slidev build slides.md",
+    "client": "vite tp-final/client --host 127.0.0.1 --port 5173",
+    "check:client": "tsc --noEmit",
+    "api": "node api/server.js",
+    "api:dev": "node --watch api/server.js",
+    "api:reset": "node api/reset.js"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "latest",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.1",
+    "vitest": "^4.1.11"
+  },
+  "dependencies": {
+    "@slidev/theme-default": "^0.25.0",
+    "better-sqlite3": "^12.11.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "latest",
+    "express-jwt": "^8.5.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "typeorm": "^1.1.1"
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+main {
+  max-width: 70rem;
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
